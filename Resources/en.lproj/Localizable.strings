@@ -1,0 +1,42 @@
+"dial.connected" = "Surface Dial SN: %@";
+"dial.disconnected" = "Surface Dial Disconnected";
+
+"menu.shortMode" = "Short Button Press";
+"menu.shortMode.leftClick" = "Left Mouse";
+"menu.shortMode.rightClick" = "Right Mouse";
+"menu.shortMode.playback" = "Playback Control";
+"menu.shortMode.launchpad" = "Launchpad";
+
+"menu.longMode" = "Long Button Press";
+"menu.longMode.leftClick" = "Left Mouse";
+"menu.longMode.rightClick" = "Right Mouse";
+"menu.longMode.launchpad" = "Launchpad";
+
+"menu.dialMode" = "Dial Mode";
+"menu.dialMode.music" = "Volume";
+"menu.dialMode.scroll" = "Scroll";
+"menu.dialMode.zoom" = "Zoom";
+"menu.dialMode.brightness" = "Brightness";
+"menu.dialMode.keyboard" = "Keyboard";
+
+"menu.pressLength" = "Press Length";
+"menu.pressLength.short" = "Short (0.5s)";
+"menu.pressLength.avg" = "Avg (1.0s)";
+"menu.pressLength.long" = "Long (1.5s)";
+
+"menu.rotationSensitivity" = "Sensitivity";
+"menu.rotationSensitivity.low" = "Low";
+"menu.rotationSensitivity.medium" = "Medium";
+"menu.rotationSensitivity.high" = "High";
+
+"menu.rotation" = "Rotation";
+"menu.rotation.cw" = "Clockwise";
+"menu.rotation.ccw" = "Counter";
+
+"menu.direction" = "Direction";
+"menu.direction.vert" = "Vertical";
+"menu.direction.horz" = "Horizontal";
+
+"menu.rotationFeedback" = "Haptics";
+
+"menu.quit" = "Quit";

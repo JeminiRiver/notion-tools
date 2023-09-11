@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21701"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="NotionTools" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="NotionTools" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="Quit NotionTools" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="NotionTools" customModuleProvider="target">
+                    <connections>
+                        <outlet property="controller" destination="gIN-nu-Pip" id="a7Z-td-ets"/>
+                    </connections>
+                </customObject>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <menu id="G3k-FC-fVx">
+                    <items>
+                        <menuItem title="databaseConnection" enabled="NO" id="yM5-u2-cSx">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                        </menuItem>
+                        <menuItem title="notionConnection" enabled="NO" id="bk4-7f-lD2">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="dwB-c8-zpm"/>
+                        <menuItem title="Top Layer" id="g2u-Rf-4tx">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                        </menuItem>
+                        <menuItem title="Sync" id="tun-Im-8wb">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <menu key="submenu" title="Sync" id="xTu-Ue-3Ga">
+                                <items>
+                                    <menuItem title="One" state="on" identifier="direction.vert" id="sFc-y8-OQB">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="syncSelectWithItem:" target="gIN-nu-Pip" id="Ud3-gm-H8K"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="Two" identifier="direction.horz" id="asP-ej-d6C">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="syncSelectWithItem:" target="gIN-nu-Pip" id="POs-4Y-6JL"/>
+                                        </connections>
+                                    </menuItem>
+                                </items>
+                            </menu>
+                        </menuItem>
+                        <menuItem isSeparatorItem="YES" id="71T-DM-FsF"/>
+                        <menuItem title="Quit" id="O5Z-zk-v4Z">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="quitTap:" target="gIN-nu-Pip" id="A2I-i5-Kuq"/>
+                            </connections>
+                        </menuItem>
+                    </items>
+                </menu>
+                <customObject id="gIN-nu-Pip" customClass="AppController" customModule="NotionTools" customModuleProvider="target">
+                    <connections>
+                        <outlet property="menuDatabaseConnection" destination="yM5-u2-cSx" id="7S7-0n-BlD"/>
+                        <outlet property="menuNotionConnection" destination="bk4-7f-lD2" id="u8E-zR-5pa"/>
+                        <outlet property="menuQuit" destination="O5Z-zk-v4Z" id="bua-Re-Fya"/>
+                        <outlet property="menuSync" destination="tun-Im-8wb" id="hne-A3-e28"/>
+                        <outlet property="menuSyncOne" destination="sFc-y8-OQB" id="3OC-Ui-0Ik"/>
+                        <outlet property="menuSyncTwo" destination="asP-ej-d6C" id="ui6-Yh-HtK"/>
+                        <outlet property="menuTopLayer" destination="g2u-Rf-4tx" id="TEN-DK-3gF"/>
+                        <outlet property="statusMenu" destination="G3k-FC-fVx" id="8SM-pk-HuJ"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+    </scenes>
+</document>
